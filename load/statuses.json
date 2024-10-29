@@ -1,0 +1,9 @@
+[
+    { "status_id": 1, "status": "Completed", "description": "The transaction has been completed successfully." },
+    { "status_id": 2, "status": "Pending", "description": "The transaction is currently being processed." },
+    { "status_id": 3, "status": "Failed", "description": "The transaction failed due to an error." },
+    { "status_id": 4, "status": "Refunded", "description": "The transaction has been refunded." },
+    { "status_id": 5, "status": "Cancelled", "description": "The transaction was cancelled by the user." },
+    { "status_id": 6, "status": "Overdue", "description": "The payment is overdue." },
+    { "status_id": 7, "status": "Error", "description": "There was an error processing the transaction." } 
+]
