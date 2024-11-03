@@ -12,6 +12,7 @@ Luego ejecuta el comando
 Estructura de la Base de Datos
 
 customers: Información sobre los clientes.
+
 transactions: Detalles de las transacciones de pago.
-payment_methods: Métodos de pago disponibles.
+
 invoices: Facturas asociadas a las transacciones.
