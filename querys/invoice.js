@@ -63,10 +63,9 @@ if (an_invoice) {
 // Calcular el monto total de todas las facturas de un cliente específico
 id_cliente = 45;
 
-print("El monto total del cliente es :",
+print(
+  "El monto total del cliente es :",
   invoice.aggregate([
-    { $group: { _id: an_invoice._id, total: { $sum: "$total_amount"} } },
+    { $group: { _id: an_invoice._id, total: { $sum: "$total_amount" } } },
   ])
 );
-
-
