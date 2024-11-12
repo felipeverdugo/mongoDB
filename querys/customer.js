@@ -119,8 +119,9 @@ print(
 print("// Buscar clientes que tienen una dirección en una ciudad específica.");
 
 var city = "La Plata";
+var street = 23;
 
-print(customers.find({ "address.street": "23", "address.city": city }));
+print(customers.find({ "address.street": street, "address.city": city }));
 
 print(
   "// Contar la cantidad de clientes que tienen un número de teléfono registrado."
