@@ -53,12 +53,14 @@ const a_movie = {
 print(
   "Actualiza el campo year de la película de título 'Civilization' a '1985'"
 );
-print();
+print(movies.find({ title: "Civilization" }, { title: 1, year: 1, _id: 0 }));
+print(movies.updateOne({ title: "Civilization" }, { $set: { year: 1985 } }));
 
 print(
   "Incrementar en 1 el número de comentarios (num_mflix_comments) de todas las películas del tipo 'movie'"
 );
-print();
+
+print(movies.updateMany([{ type: "movie" }, { $inc: { num_comments: 1 } }]));
 
 print("Añadir un nuevo campo 'pub_es' y con el valor 'verdadero'");
 print();

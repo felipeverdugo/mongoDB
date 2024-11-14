@@ -7,7 +7,7 @@ const customersData = JSON.parse(fs.readFileSync("customer.json"));
 const transactionsData = JSON.parse(fs.readFileSync("transaction.json"));
 const invoicesData = JSON.parse(fs.readFileSync("invoices.json"));
 const restaurantsData = JSON.parse(fs.readFileSync("restaurants.json"));
-const moviesData = JSON.parse(fs.readFileSync("movies.json"));
+const moviesData = JSON.parse(fs.readFileSync("paymentsDB.movies.json"));
 
 db.customer.drop();
 db.transaction.drop();
